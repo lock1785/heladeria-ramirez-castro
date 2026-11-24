@@ -3,85 +3,207 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Heladería Ramírez Castro: sabores artesanales hechos con cariño.">
-  <title>Heladería Ramírez Castro</title>
+  <meta name="description" content="Heladería Ramírez Castro: helado artesanal, sabores clásicos y de temporada, hecho cada día con ingredientes frescos.">
+  <meta name="theme-color" content="#c94f78">
+  <title>Heladería Ramírez Castro | Helado artesanal</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%8D%A6%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
   <header class="site-header">
     <div class="container header-inner">
-      <a class="brand" href="#inicio">Heladería <strong>Ramírez Castro</strong></a>
-      <nav aria-label="Navegación principal">
+      <a class="brand" href="#inicio" aria-label="Inicio - Heladería Ramírez Castro">
+        <span class="brand-mark" aria-hidden="true">🍦</span>
+        <span>Ramírez <strong>Castro</strong></span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu-principal" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="menu-principal" aria-label="Navegación principal">
         <a href="#sabores">Sabores</a>
-        <a href="#nosotros">Nosotros</a>
+        <a href="#historia">Nuestra historia</a>
+        <a href="#opiniones">Opiniones</a>
         <a href="#contacto">Contacto</a>
       </nav>
     </div>
   </header>
 
-  <main>
+  <main id="contenido">
     <section id="inicio" class="hero">
-      <div class="container">
-        <p class="eyebrow">El sabor de siempre</p>
-        <h1>Helado artesanal <span>Ramírez Castro</span></h1>
-        <p class="lead">Elaborado día a día con ingredientes frescos y mucho cariño. Ven a disfrutar un cono bajo el sol.</p>
-        <a class="button" href="#sabores">Descubre nuestros sabores</a>
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Helado artesanal desde el barrio</p>
+          <h1>Un cono, <span>mil razones</span> para volver</h1>
+          <p class="lead">En Ramírez Castro preparamos cada tanda en pequeñas cantidades, con fruta real y mucho cariño. Eso se nota en cada cucharada.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#sabores">Ver nuestros sabores</a>
+            <a class="button button-ghost" href="#contacto">Cómo llegar</a>
+          </div>
+          <ul class="trust-list" aria-label="Nuestras ventajas">
+            <li><span aria-hidden="true">✓</span> Hecho a diario</li>
+            <li><span aria-hidden="true">✓</span> Ingredientes frescos</li>
+            <li><span aria-hidden="true">✓</span> Atención familiar</li>
+          </ul>
+        </div>
+
+        <div class="hero-art reveal" aria-hidden="true">
+          <div class="scoop scoop-strawberry"></div>
+          <div class="scoop scoop-mint"></div>
+          <div class="scoop scoop-vanilla"></div>
+          <div class="cone"></div>
+          <div class="sprinkle s1"></div>
+          <div class="sprinkle s2"></div>
+          <div class="sprinkle s3"></div>
+          <div class="badge-art">100%<br>artesanal</div>
+        </div>
       </div>
+      <div class="wave" aria-hidden="true"></div>
     </section>
 
     <section id="sabores" class="section">
       <div class="container">
-        <h2>Nuestros sabores</h2>
-        <p class="section-intro">Clásicos que nunca fallan y algunas sorpresas de temporada.</p>
+        <div class="section-head reveal">
+          <p class="eyebrow">La carta</p>
+          <h2>Sabores que enamoran</h2>
+          <p class="section-intro">Los clásicos de siempre y algunas sorpresas que cambian con la temporada.</p>
+        </div>
+
         <div class="cards">
-          <article class="card">
-            <div class="card-emoji" aria-hidden="true">🍦</div>
-            <h3>Vainilla bourbon</h3>
-            <p>Crema suave con notas de vainilla natural.</p>
+          <article class="card reveal">
+            <span class="card-emoji" aria-hidden="true">🍨</span>
+            <div class="card-top">
+              <h3>Vainilla bourbon</h3>
+              <span class="price">$3.50</span>
+            </div>
+            <p>Crema sedosa con vainilla natural y un toque cálido de bourbon.</p>
+            <span class="tag">Clásico</span>
           </article>
-          <article class="card">
-            <div class="card-emoji" aria-hidden="true">🍫</div>
-            <h3>Chocolate oscuro</h3>
-            <p>Cacao intenso, perfecto para los amantes del chocolate.</p>
+
+          <article class="card reveal">
+            <span class="card-emoji" aria-hidden="true">🍫</span>
+            <div class="card-top">
+              <h3>Chocolate oscuro</h3>
+              <span class="price">$3.80</span>
+            </div>
+            <p>Cacao intenso, casi sin azúcar. Para los que nunca se cansan del chocolate.</p>
+            <span class="tag tag-dark">Intenso</span>
           </article>
-          <article class="card">
-            <div class="card-emoji" aria-hidden="true">🍓</div>
-            <h3>Fresa fresca</h3>
-            <p>Fruta de temporada, ligero y refrescante.</p>
+
+          <article class="card reveal">
+            <span class="card-emoji" aria-hidden="true">🍓</span>
+            <div class="card-top">
+              <h3>Fresa fresca</h3>
+              <span class="price">$4.00</span>
+            </div>
+            <p>Fruta de temporada, ligero y refrescante. Sabe a verano.</p>
+            <span class="tag tag-fruit">De temporada</span>
           </article>
-          <article class="card">
-            <div class="card-emoji" aria-hidden="true">🥭</div>
-            <h3>Mango tropical</h3>
-            <p>Un toque dulce y exótico para los días calurosos.</p>
+
+          <article class="card reveal">
+            <span class="card-emoji" aria-hidden="true">🥭</span>
+            <div class="card-top">
+              <h3>Mango tropical</h3>
+              <span class="price">$4.20</span>
+            </div>
+            <p>Dulce, exótico y cremoso. Nuestro favorito para los días soleados.</p>
+            <span class="tag tag-fruit">De temporada</span>
           </article>
+
+          <article class="card reveal">
+            <span class="card-emoji" aria-hidden="true">☕</span>
+            <div class="card-top">
+              <h3>Café con leche</h3>
+              <span class="price">$3.90</span>
+            </div>
+            <p>Granos de tueste medio, perfecto para los madrugadores.</p>
+            <span class="tag">Clásico</span>
+          </article>
+
+          <article class="card reveal">
+            <span class="card-emoji" aria-hidden="true">🌱</span>
+            <div class="card-top">
+              <h3>Menta chip</h3>
+              <span class="price">$4.10</span>
+            </div>
+            <p>Menta fresca con trocitos de chocolate. Opción vegana disponible.</p>
+            <span class="tag tag-vegan">Vegano</span>
+          </article>
+        </div>
+        <p class="cards-note">¿Alérgico o vegano? Pregúntanos por nuestras opciones sin lactosa y sin azúcar añadido.</p>
+      </div>
+    </section>
+
+    <section id="historia" class="section section-alt">
+      <div class="container story-grid">
+        <div class="reveal">
+          <p class="eyebrow">Nuestra historia</p>
+          <h2>De una nevera a un barrio entero</h2>
+          <p>Empezamos con una receta de familia y una heladera prestada. Hoy seguimos haciendo lo mismo: probar cada tanda antes de servirla, escuchar a nuestros clientes y mejorar un poquito cada día.</p>
+          <p>Nos gusta que quien entra salga con una sonrisa. Por eso aquí el helado se sirve con conversación.</p>
+          <a class="text-link" href="#contacto">Ven a conocernos →</a>
+        </div>
+        <ol class="timeline reveal">
+          <li><strong>Antes</strong><span>La receta de la abuela, anotada en un cuaderno.</span></li>
+          <li><strong>El primer verano</strong><span>Un carrito en la plaza del barrio.</span></li>
+          <li><strong>Hoy</strong><span>Nuestra heladería, siempre con olor a cono recién hecho.</span></li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="opiniones" class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Lo que dicen</p>
+          <h2>Nuestros clientes</h2>
+        </div>
+        <div class="testimonials">
+          <blockquote class="reveal">
+            <p>"El mejor helado de fresa que he probado. Se nota que es de verdad."</p>
+            <cite>— Mariana G.</cite>
+          </blockquote>
+          <blockquote class="reveal">
+            <p>"Siempre nos llevamos un cono extra para el camino. Ya es tradición."</p>
+            <cite>— Luis R.</cite>
+          </blockquote>
+          <blockquote class="reveal">
+            <p>"Atención excelente y opciones veganas. Muy recomendable."</p>
+            <cite>— Carolina M.</cite>
+          </blockquote>
         </div>
       </div>
     </section>
 
-    <section id="nosotros" class="section section-alt">
-      <div class="container">
-        <h2>Sobre nosotros</h2>
-        <p>Somos una pequeña heladería familiar. Preparamos cada tanda de helado en cantidades reducidas para cuidar la textura y el sabor, porque creemos que lo artesanal se nota en cada cucharada.</p>
-      </div>
-    </section>
-
-    <section id="contacto" class="section">
-      <div class="container">
-        <h2>Contacto</h2>
-        <p>Pásanos a vernos o escríbenos para encargos y eventos.</p>
-        <ul class="contact-list">
-          <li><strong>Dirección:</strong> Calle Principal 123, centro</li>
-          <li><strong>Horario:</strong> Lunes a domingo, 12:00 – 21:00</li>
-          <li><strong>Correo:</strong> hola@ramirezcastro.example</li>
-        </ul>
+    <section id="contacto" class="section contact-section">
+      <div class="container contact-grid">
+        <div class="reveal">
+          <p class="eyebrow">Contacto</p>
+          <h2>Te esperamos</h2>
+          <p>Pásate por la heladería o escríbenos para encargos, eventos y pedidos especiales.</p>
+          <a class="button button-primary" href="https://wa.me/0000000000" target="_blank" rel="noopener noreferrer">Escribir por WhatsApp</a>
+        </div>
+        <div class="info-cards reveal">
+          <div class="info-card"><span aria-hidden="true">📍</span><div><strong>Dirección</strong><p>Calle Principal 123, centro</p></div></div>
+          <div class="info-card"><span aria-hidden="true">🕒</span><div><strong>Horario</strong><p>Lunes a domingo · 12:00 – 21:00</p></div></div>
+          <div class="info-card"><span aria-hidden="true">✉️</span><div><strong>Correo</strong><p>hola@ramirezcastro.example</p></div></div>
+        </div>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <div class="container">
-      <p>&copy; 2026 Heladería Ramírez Castro. Hecho con 🍧 para la práctica de Git y GitFlow.</p>
+    <div class="container footer-inner">
+      <p>© <span id="anio">2026</span> Heladería Ramírez Castro. Hecho con 🍧.</p>
+      <a href="#inicio">Volver arriba ↑</a>
     </div>
   </footer>
+
+  <a class="whatsapp-float" href="https://wa.me/0000000000" target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp">💬</a>
+
+  <script src="js/main.js"></script>
 </body>
 </html>
