@@ -2,10 +2,10 @@
   --crema: #fff8f1;
   --blanco: #ffffff;
   --fresa: #f2789f;
-  --fresa-oscuro: #c94f78;
+  --fresa-oscuro: #a8325b;
   --fresa-claro: #ffe3ec;
   --menta: #bfe3d2;
-  --menta-oscuro: #4f8f76;
+  --menta-oscuro: #2f6b53;
   --vainilla: #f6d99a;
   --texto: #3b2f33;
   --texto-suave: #6b5a60;
@@ -472,9 +472,9 @@ h2 {
   font-weight: 800;
 }
 
-.tag-dark { background: #efe4e0; color: #7a4b3f; }
-.tag-fruit { background: #ffe9d6; color: #b2682d; }
-.tag-vegan { background: var(--menta); color: var(--menta-oscuro); }
+.tag-dark { background: #efe4e0; color: #5e362c; }
+.tag-fruit { background: #ffe9d6; color: #8a4e1f; }
+.tag-vegan { background: var(--menta); color: #245641; }
 
 .cards-note {
   text-align: center;
