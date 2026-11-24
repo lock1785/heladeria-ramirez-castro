@@ -24,11 +24,17 @@ heladeria-ramirez-castro/
 ├── index.html
 ├── css/
 │   └── styles.css
+├── js/
+│   └── main.js
 ├── docs/
 │   └── GITFLOW.md
 └── README.md
 ```
 
+## Página web
+
+La página incluye cabecera responsive, sección principal, carta de sabores con precios y etiquetas, historia, testimonios, datos de contacto y un botón flotante de WhatsApp. El diseño se adapta a móvil y respeta la opción de reducir animaciones del sistema.
+
 ## Estado actual
 
-Commit inicial: documentación base y configuración del repositorio. Las funcionalidades de la página se incorporarán mediante ramas `feature/*` sobre `develop`.
+El proyecto sigue el flujo GitFlow: `main` contiene el commit inicial, `develop` integra las funcionalidades y cada mejora entra mediante una rama `feature/*`.
